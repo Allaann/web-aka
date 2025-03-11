@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AKA Coffee</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </nav>
+
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here..">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+
+            <div class="cart-items-container">
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="img/menu-1.jpg" alt="">
+                    <div class="content">
+                        <h3>Affogato</h3>
+                        <div class="price">Rp. 15.000</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="img/menu-2.jpg" alt="">
+                    <div class="content">
+                        <h3>Lontong Balap</h3>
+                        <div class="price">Rp. 15.000</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="img/menu-3.jpg" alt="">
+                    <div class="content">
+                        <h3>ice Coffee Milk</h3>
+                        <div class="price">Rp. 15.000</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="img/menu-4.jpg" alt="">
+                    <div class="content">
+                        <h3>Coffee and Toast</h3>
+                        <div class="price">Rp. 15.000</div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Checkout</a>
+            </div>
+        </header>
+        
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Better beans, better coffee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eum soluta at corporis fugit maxime aspernatur explicabo necessitatibus possimus recusandae.</p>
+                <a href="#menu" class="btn">Get yours</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading"><span>About</span> us </h1>
+            <div class="row">
+                <div class="image">
+                    <img src="img/about.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>What makes our coffe special?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facilis, cumque qui explicabo nostrum totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veritatis obcaecati aliquam nulla eveniet earum. Repudiandae, magnam. Fugit, sapiente?</p>
+                    <a href="#" class="btn">Learn more you dumbass</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <h1 class="heading">our<span> menu </span></h1>
+            
+            <form id="menuForm">
+                <input type="text" id="menuName" placeholder="Nama Menu" required>
+                <input type="number" id="menuPrice" placeholder="Harga Menu" required>
+                <input type="number" id="menuDiscountPrice" placeholder="Harga Diskon" required>
+                <input type="text" id="menuImage" placeholder="URL Gambar" required>
+                <button type="submit">Tambah Menu</button>
+            </form>
+        
+            <div class="box-container" id="menuList">
+                <!-- Daftar menu akan ditampilkan di sini -->
+            </div>
+        </section>
+
+        <section class="review" id="review">
+            <h1 class="heading"> <span>What</span> they say</h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/quotes.png" alt="" class="quote">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, tempore? Similique impedit reiciendis voluptates provident!</p>
+                    <img src="img/review-1.jpeg" class="person" alt="">
+                    <h3>Leviatan Khan</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/quotes.png" alt="" class="quote">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis qui repellat voluptates totam reiciendis laudantium nam blanditiis perspiciatis! Laborum, numquam expedita.</p>
+                    <img src="img/review-2.jpeg" class="person" alt="">
+                    <h3>Kevin Pablo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/quotes.png" alt="" class="quote">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem accusantium officia!</p>
+                    <img src="img/review-3.jpeg" class="person" alt="">
+                    <h3>Mei Mei</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="heading">contact <span>us</span></h1>
+            <div class="row">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.717381669682!2d112.58219627443526!3d-7.924559378898674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788227e7d085ef%3A0x19812d1b1430a969!2sAKA%20Coffee!5e0!3m2!1sid!2sid!4v1737306721914!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form action="">
+                    <h3>get in touch</h3>
+                    <div class="inputbox">
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="name">
+                    </div>
+                    <div class="inputbox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputbox">
+                        <span class="fas fa-phone"></span>
+                        <input type="number" placeholder="number">
+                    </div>
+                    <input type="submit" value="contact now" class="btn">
+                </form>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-whatsapp"></a>
+            </div>
+            <div class="links">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="credit">created by <span>the other side of me</span> | all right reserved</div>
+        </section>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
