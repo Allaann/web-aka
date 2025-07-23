@@ -4,14 +4,22 @@ Website sederhana dan responsif untuk sebuah coffee shop, yang menampilkan produ
 
 ## Fitur
 
-- Desain Responsif: Menyesuaikan dengan berbagai ukuran layar menggunakan media query CSS.
-- Navbar Interaktif: Navbar tetap di bagian atas dengan fungsi toggle untuk tampilan mobile.
-- Kotak Pencarian: Fitur pencarian yang dapat dibuka dan ditutup dengan klik tombol.
-- Sistem Keranjang: Sistem keranjang yang dapat diakses melalui ikon keranjang.
-- Kontak: Memungkinkan pengunjung untuk berkomunikasi dengan pihak coffee shop.
+- Login Admin (Username: admin, Password: aka123)
+- Tambah, edit, hapus menu (CRUD)
+- Menampilkan menu dari database
+- Tambah menu ke keranjang (cart) menggunakan localStorage
 
-## Teknologi yang Digunakan
+## Teknologi
 
-- HTML: Struktur halaman.
-- CSS: Styling dengan variabel kustom untuk warna dan desain responsif.
-- JavaScript: Menambahkan interaktivitas pada navbar, kotak pencarian, dan keranjang belanja.
+- HTML, CSS, JavaScript (Vanilla)
+- PHP Native
+- MySQL (Database: aka_db)
+- LocalStorage (untuk cart)
+
+## Cara Jalankan
+
+1. Jalankan XAMPP (Apache & MySQL)
+2. Taruh folder ini di `htdocs`, misal: `C:\xampp\htdocs\web_aka`
+3. Buat database `aka_db` dan table `menus`
+4. Akses di browser: `http://localhost/web_aka/`
+
